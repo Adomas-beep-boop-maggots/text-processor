@@ -7,6 +7,7 @@ import lt.auskim.TextProcessorsDefault;
 public class Main {
     public static void main(String[] args) {
         TextProcessorsDefault runner = new TextProcessorsDefault("input.txt");
-        runner.process(new TextProcessorsDefault.GroupedProcessor());
+//        runner.process(new TextProcessorsDefault.GroupedProcessor());
+        runner.runProcessors();
     }
 }

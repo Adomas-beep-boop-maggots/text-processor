@@ -5,6 +5,9 @@ import java.util.*;
 public class TextProcessorsDefault extends TextProcessors {
     public TextProcessorsDefault(String filePath) {
         super(filePath);
+        TextProcessorsDefault.addProcessor(new SortProcessor());
+        TextProcessorsDefault.addProcessor(new GroupedProcessor());
+        TextProcessorsDefault.addProcessor(new UniqueProcessor());
     }
 
     public static class GroupedProcessor extends TextProcessor {
